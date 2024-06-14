@@ -2,7 +2,7 @@
 #imports / main code.
 import random
 import time
-QUESTION_FORMAT = "{}\na.{}b.{}c.{}d.{}"
+QUESTION_FORMAT = "{}\na.{}\nb.{}\nc.{}\nd.{}"
 
 #words lists
 easywords_list = ["wookie","lightspeed","lightsaber","force"]
