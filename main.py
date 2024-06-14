@@ -1,11 +1,31 @@
-#importing the time module
+
+#imports / main code.
 import random
 import time
-Words_list = ["wookie","lightspeed","lightsaber","force"]
+QUESTION_FORMAT = "{}\na.{}b.{}c.{}d.{}"
+
+#words lists
+easywords_list = ["wookie","lightspeed","lightsaber","force"]
+
 #welcoming the user
 name = input("What is your name? ")
-
 print ("Hello, " + name, "Time to play hangman!")
 
-#here we set the secret. You can select any word to play with. 
-word = random.choice(Words_list)
+#diffuculty select.
+question = "what diffuculty do you want the game to be"
+a = "easy"
+b = "medium"
+c = "hard"
+d = "extreme"
+answer = input(QUESTION_FORMAT.format(question, a, b, c, d)).lower()
+if answer == a or answer == "a":
+    print ("easy mode easy win")
+if answer == b or answer == "b":
+    print ("medium challenge for most people")
+if answer == c or answer == "c":
+    print ("hard mode be ready")
+if answer == d or answer == "d":
+    print ("extreme mode is nearly impossible be ready")
+
+#select words. 
+word = random.choice(easywords_list)
