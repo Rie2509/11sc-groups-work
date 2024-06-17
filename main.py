@@ -4,13 +4,43 @@ import random
 import time
 Score =+ 10
 QUESTION_FORMAT = "{}\na.{}\nb.{}\nc.{}\nd.{}"
-Play = "yes"
+play = "yes"
 #words lists
 easywords_list = ["wookie","lightspeed","lightsaber","force"]
 
 #welcoming the user
 name = input("What is your name? ")
 print ("Hello, " + name, "Time to play hangman!")
+
+#tries code
+while play == "yes": 
+ # check number of question attempts
+ while True:
+    try:
+        tries = input("how many lives do you want\n")
+        tries = int(tries)
+        break
+    except:
+        print("thats not a number")
+# start the quiz
+
+
+    question_attempts = tries
+    while question_attempts > 0:
+        #ask the use a question
+
+        answer = input("")
+        if answer == "yes":
+            print("sigma")
+            break
+        elif answer == "":
+            print("Write something")
+        else:
+            print("no you dumb")    
+        
+        question_attempts -= 1
+        print("Try again") 
+
 
 #diffuculty select.
 question = "what diffuculty do you want the game to be"
@@ -31,30 +61,6 @@ if answer == d or answer == "d":
 #select words. 
 word = random.choice(easywords_list)
  
- # check number of question attempts
-while True:
-    try:
-        tries = input("how many lives do you want")
-        tries = int(tries)
-        break
-    except:
-        print("thats not a number")
-# start the quiz
-while Play == "yes":
-
-    question_attempts = tries
-    while question_attempts > 0:
-        #ask the use a question
-
-        answer = input("are you a sigma")
-        if answer == "yes":
-            print("sigma")
-            break
-        elif answer == "":
-            print("Write something")
-        else:
-            print("no you dumb")    
-        
-        question_attempts -= 1
-        print("Try again")
-
+#End the quiz
+    #Replay
+play = input ("do you want to try again").lower()
