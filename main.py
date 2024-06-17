@@ -2,7 +2,7 @@
 #imports / main code.
 import random
 import time
-QUESTION_FORMAT = "{}\na.{}\nb.{}\nc.{}\nd.{}"
+QUESTION_FORMAT = "{}\na.{}\nb.{}\nc.{}\nd.{}\n"
 
 #words lists
 easywords_list = ["wookie","lightspeed","lightsaber","force"]
@@ -23,12 +23,18 @@ d = "extreme"
 answer = input(QUESTION_FORMAT.format(question, a, b, c, d)).lower()
 if answer == a or answer == "a":
     print ("easy mode easy win")
-if answer == b or answer == "b":
+    word = random.choice(easywords_list)
+elif answer == b or answer == "b":
     print ("medium challenge for most people")
-if answer == c or answer == "c":
+    word = random.choice(mediumwords_list)
+elif answer == c or answer == "c":
     print ("hard mode be ready")
-if answer == d or answer == "d":
+    word = random.choice(hardwords_list)
+elif answer == d or answer == "d":
     print ("extreme mode is nearly impossible be ready")
-
+    word = random.choice(extremewords_list)
+else:
+    print ("medium mode auto selected")
+    word = random.choice(mediumwords_list)
 #select words. 
-word = random.choice(easywords_list)
+
