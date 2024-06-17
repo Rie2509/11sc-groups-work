@@ -6,6 +6,9 @@ QUESTION_FORMAT = "{}\na.{}\nb.{}\nc.{}\nd.{}"
 
 #words lists
 easywords_list = ["wookie","lightspeed","lightsaber","force"]
+mediumwords_list = ["deathstar","darth vader","x wing","tie fighter"]
+hardwords_list = ["place holder","place holder","place holder","place holder"]
+extremewords_list = ["place holder","place holder","place holder","place holder"]
 
 #welcoming the user
 name = input("What is your name? ")
