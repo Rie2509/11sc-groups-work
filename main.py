@@ -6,9 +6,9 @@ QUESTION_FORMAT = "{}\na.{}\nb.{}\nc.{}\nd.{}\n"
 
 #words lists
 easywords_list = ["wookie","lightspeed","lightsaber","force"]
-mediumwords_list = ["deathstar","darth vader","x wing","tie fighter"]
-hardwords_list = ["place holder","place holder","place holder","place holder"]
-extremewords_list = ["place holder","place holder","place holder","place holder"]
+mediumwords_list = ["deathstar","darth vader","x wing","kylo ren"]
+hardwords_list = ["mace windu","plo koon","general grievous","tie fighter"]
+extremewords_list = ["star fighter","starkiller base","midichlorians","general snoke"]
 
 #welcoming the user
 name = input("What is your name? ")
