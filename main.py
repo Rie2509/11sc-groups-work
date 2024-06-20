@@ -37,4 +37,11 @@ else:
     print ("medium mode auto selected")
     word = random.choice(mediumwords_list)
 #select words. 
+#guess letters
+guess=""
+while len(guess) !=1:
+    guess= input("Guess a letter")
 
+
+for i in range(len(word)):
+    if word[i]==guess.lower():
