@@ -36,7 +36,12 @@ elif answer == d or answer == "d":
 else:
     print ("medium mode auto selected")
     word = random.choice(mediumwords_list)
-#select words. 
+#select words.
+blanks=""
+for letter in word: 
+    if letter " "
+        blanks += ("_") 
+print(blanks)
 #guess letters
 guess=""
 while len(guess) !=1:
@@ -45,3 +50,6 @@ while len(guess) !=1:
 
 for i in range(len(word)):
     if word[i]==guess.lower():
+        pass
+
+#ending / restart (Taiwhakaea)
