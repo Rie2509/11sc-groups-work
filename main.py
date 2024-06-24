@@ -37,10 +37,12 @@ else:
     print ("medium mode auto selected")
     word = random.choice(mediumwords_list)
 #select words.
+
 blanks=""
 for letter in word: 
-    if letter " "
-        blanks += ("_") 
+    if letter == (" "):
+        blanks += (" ") 
+    else : blanks += ("_")
 print(blanks)
 #guess letters
 guess=""
