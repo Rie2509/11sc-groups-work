@@ -39,7 +39,7 @@ else:
 #select words.
 blanks=""
 for letter in word: 
-    if letter " "
+    if letter ""
         blanks += ("_") 
 print(blanks)
 #guess letters
