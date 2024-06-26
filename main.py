@@ -96,3 +96,4 @@ for i in range(len(word)):
 
 #ending / restart (Taiwhakaea)
 >>>>>>> 7107d71574827eb90fcbd34d58b8f6d35dc3b49d
+
