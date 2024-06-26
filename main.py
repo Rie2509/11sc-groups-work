@@ -67,16 +67,16 @@ elif answer == d or answer == "d":
 else:
     print ("medium mode auto selected")
     word = random.choice(mediumwords_list)
-<<<<<<< HEAD
+
 #select words. 
 word = random.choice(easywords_list)
  
 #End the quiz
     #Replay
 play = input ("do you want to try again").lower()
-=======
+
 #select words.
-while not letter .isalpha
+while not letter .isalpha:
     input("Make sure your guess is a letter")
 blanks=""
 for letter in word: 
@@ -95,5 +95,5 @@ for i in range(len(word)):
         pass
 
 #ending / restart (Taiwhakaea)
->>>>>>> 7107d71574827eb90fcbd34d58b8f6d35dc3b49d
+
 
