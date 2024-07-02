@@ -98,33 +98,5 @@ while play == "yes":
 # for i in range(len(word)):
 #     if word[i]==guess.lower():
 #         pass
-
-
-
-
- while (attempts != 0 and "-" in word_guessed):
-                    print(("\nYou have {} attempts remaining").format(attempts))
-                    joined_word = "".join(word_guessed)
-                    print(joined_word)
-
-                    try:
-                        player_guess = str(input("\nPlease select a letter between A-Z" + "\n> ")).lower()
-                    except: # check valid input
-                        print("That is not valid input. Please try again.")
-                        continue                
-                    else: 
-                        if not player_guess.isalpha(): # check the input is a letter. Also checks an input has been made.
-                            print("That is not a letter. Please try again.")
-                            continue
-                        elif len(player_guess) > 1: # check the input is only one letter
-                            print("That is more than one letter. Please try again.")
-                            continue
-                        elif player_guess in guessed_letters: # check it letter hasn't been guessed already
-                            print("You have already guessed that letter. Please try again.")
-                            continue
-                        else:
-                            pass
-
-
 # #ending / restart (Taiwhakaea)
 # play = input ("do you want to play again?")   
