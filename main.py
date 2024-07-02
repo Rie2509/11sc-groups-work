@@ -9,7 +9,7 @@ play = "yes"
 easywords_list = ["wookie","lightspeed","lightsaber","force"]
 mediumwords_list = ["deathstar","darth vader","x wing","kylo ren"]
 hardwords_list = ["mace windu","plo koon","general grievous","tie fighter"]
-extremewords_list = ["star fighter","starkiller base","midichlorians","general snoke"]
+extremewords_list = ["starfighter","starkiller base","midichlorians","generalsnoke"]
 tries = ''
 #welcoming the user
 name = input("What is your name? ")
@@ -102,7 +102,7 @@ while play == "yes":
 
 
 
-            .   while (attempts != 0 and "-" in word_guessed):
+ while (attempts != 0 and "-" in word_guessed):
                     print(("\nYou have {} attempts remaining").format(attempts))
                     joined_word = "".join(word_guessed)
                     print(joined_word)
